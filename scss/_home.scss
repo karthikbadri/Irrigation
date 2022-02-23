@@ -1,0 +1,214 @@
+.main-banner{
+    position: relative;
+    .banner-image {
+        width: $full-width;
+    }
+        .content{
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 245px;
+            margin-left: 110px;
+            color: $color-white;
+    
+            &__main-heading {
+                background-color:$color-greenish;
+                font-size:57px;
+                font-weight: $weight;
+                padding: 0 20px;
+                margin-bottom: 5px;
+            }
+            &__banner-paragraph {
+                background-color: $color-darkgreenish;
+                font-size: 35px;
+                font-weight: $weight;
+                padding: 14px 20px 10px 20px;
+                
+            }
+            &__knowmore-button {
+                background-color: $color-white;
+                font-size: 22px;
+                color: $color-darkbrown;
+                font-family: lato;
+                text-decoration: none;
+                padding: 10px 21px;
+                font-weight: 400;
+                margin-top: 35px;
+            }
+    }
+    .content-icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -32px;
+        margin: 0 auto;
+      }
+}
+
+
+.manage-develop-section {
+    position: relative;
+    margin-top: 136px !important;
+    padding: 0 0 100px 140px !important;
+    width: $full-width;
+
+    &__irrigation-section {
+        @include display(flex,row);}
+    &__main-text,
+    &__sub-text {
+            font-family: lato;
+            font-size: 51px;
+            color: $color-brown;
+            font-weight: $weight;
+        }
+    &__main-text {
+            padding-left: 140px;
+        }
+    &__sub-text {
+            padding-left: 280px;
+        }
+    &__irrigation-text {
+            font-size: 131px;
+            font-weight: $weight;
+            background-image: url(#{$image-path}/home/banner-image.png);
+            font-family: sans-serif;
+            color: transparent;
+            line-height: 1;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: cover;
+            background-position: -8rem 15rem;
+        }
+    &__irrigation-logo-image {
+            position: absolute;
+            right: 80px;
+            top: 10px;
+        }
+    }
+
+
+.services-section {
+    background-image: linear-gradient(to bottom, $color-white, rgba(248, 248, 248, 0.6));
+    @include display(flex,row);
+    margin: 100px 0 40px 140px;
+    &__service-items {
+        list-style-type: none;
+        display: flex;
+        }
+        &__items {
+            text-align: $center;
+            margin: 0 77px 0 0;
+            @include display(flex,column);
+            justify-content: space-between;
+        }
+        &__logo {
+            height: 75px;
+            width: 75px;
+            margin-bottom: 15px;
+        }
+        &__sprinkler-item {
+            text-align: $center;
+            @include display(flex,column);
+            margin-right: 0;
+        }
+        &__service-text {
+            width: 120px;
+            font-family: lato;
+            font-size: 16px;
+            color: $color-brown;
+            text-decoration: none;
+            font-weight: $weight;
+            padding: 15px 0 0 0;
+        }
+    }
+
+
+
+.about-us{
+    position: relative;
+    margin-bottom: 80px;
+
+    &__background-theme{
+        background-color:$color-lightbrown;
+        width: $full-width;
+    }
+    &__grey-bg-image {
+        display: block;
+    }
+    
+
+    &__content{
+        position: absolute;
+        bottom: 80px;
+        right: 0;
+        left: 0;
+        width: 1125px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display:flex;
+        align-items:center;
+    }
+    &__play-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     &__nature-image {
+        position: relative;
+    }
+    &__play-button-theme {
+        border: 2px solid $color-playgreen;
+        border-radius: 50px;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::after {
+            position: absolute;
+            background-color: $color-lightgreen;
+            height: 70px;
+            width: 70px;
+            border-radius: 50px;
+            content: close-quote;
+        }
+    }
+    &__play-button {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    &__description{
+        color: $color-white;
+        width: 393px;
+        margin-left: 90px;
+
+    }
+    &__sub-heading{
+        font-size:36px;
+        @include font(Lato,sans-serif );
+        margin-bottom: 20px;
+    }
+    &__sub-content{
+        font-size:16px;
+        @include font(Lato,sans-serif );
+        margin-bottom: 40px;
+    }
+    &__knowmore {
+        background-color: $color-lightgreen;
+        color: $color-white;
+        font-size: 22px;
+        padding: 10px 20px;
+        text-decoration: none;
+        &:hover {
+            font-size: 24px;
+            color: $color-white;
+            background-color: $color-darkgreen;
+        }
+      }
+ }

@@ -1,0 +1,159 @@
+.footer-section{
+    width: $full-width;
+    background-image:#{url('../images/footer/bg-footer.png')};
+    background-size:cover;
+    background-repeat:no-repeat;
+    &__container {
+        width: 1125px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    &__content{
+        width: $full-width;
+        @include display(flex,row);
+        justify-content: space-between;
+        .contact-vidc{
+            width:30%;
+            margin-top:100px;
+        }
+    } 
+    &__sub-section{
+        width:70%;
+        margin-top:100px;
+        padding: 35px 10px 0 10px;
+    }
+    &__sub-heading{
+        font-size:22px;
+        color: $color-white;
+    }
+    input{
+        width:92%;
+        height:40px;
+        background-color:$color-darkgreen;
+        border-radius:20px;
+        border-style:none;
+        margin-top:10px;
+        padding-left: 20px;
+    }
+    ::placeholder{
+        color: $color-white;
+        font-family: lato;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    &__subscribe-btn{
+        border-radius: 15px;
+        font-family: lato;
+        font-weight: 700;
+        color: $color-black;
+        font-size: 16px;
+        margin-top: 14px;
+        margin-left: -195px;
+        position: absolute;
+        text-decoration: none;
+        background-color: $color-white;
+        padding: 6px 30px;
+    }
+}
+
+    .quick-links{
+        display:flex;
+        color: $color-white;
+        &__title{
+        font-size:16px;
+        margin: 8px 0;
+        padding-top: 15px;
+        }
+        &__sub-title{
+            text-decoration: none;
+            color: $color-white;
+            display: block;
+            font-size: 14px;
+            padding-top: 5px;
+        }
+        &__sub-title-links{
+            margin-top: 50px;
+        }
+        div:nth-child(2),
+        div:nth-child(3){
+            margin-left:140px;
+        }
+    }
+
+.copyright-section{
+    @include display(flex,row);
+    justify-content: space-between;
+    color: $color-white;
+    font-size:12px;
+    margin-top:90px;
+    margin-bottom: 15px;
+    div>p:nth-child(3){
+        display:inline;
+        margin-left:5px;
+    }
+    div:nth-child(2) p{
+        align-self:flex-end;
+    }
+    
+}
+
+.contact-vidc{
+    background-color:$color-green;
+    @include display(flex,column);
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    hr{
+        color:$color-lightgreen;
+        width:60%;
+        border-width:0.4px;
+        margin-left: 80px;
+    }
+    
+    .each-section{
+        display:flex;  
+        margin:20px;
+        color: $color-white;
+        .each-section__title{
+            font-size:18px;
+            margin-bottom: 5px;
+        }
+        .each-section__title-content{
+            font-size:14px;
+            margin-top: 5px;
+        }
+        .each-section__contact-us {
+            text-decoration: none;
+            color: $color-white;
+          }
+        .each-section__title-icon {
+             padding-top: 25px;
+          }
+        div:nth-child(2){
+            margin-left:30px;
+        }
+    }   
+}
+
+.email-image{
+    background-color:transparent;
+}
+
+.follow-us{
+    @include display(flex,row);
+    justify-content: flex-start;
+    align-items:center;
+    margin-left:0px;
+    padding-left: 15px;
+    i{
+        margin-left:15px;
+        color: $color-white;
+    }
+    h3{
+        border-right-style:solid ;
+        border-right-width:1px;
+        padding-right:5px;
+        color: $color-white;
+        padding-right:15px;
+        font-size:18px;   
+    }
+}
